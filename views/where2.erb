@@ -29,8 +29,11 @@
         height="450"
         frameborder="0" style="border:0"
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCtovsQvkIUWlNqtYwXY87gEd4ZSmJEhMw
-          &q=42.0574063,-87.6722787&zoom=6" allowfullscreen>
+          &q=<%=@lat_long%>&zoom=6" allowfullscreen>
       </iframe>
+        <p>
+            <a href="/" class="btn btn-primary">Let's Go!</a>
+        </p>
     </div>
 
     <!-- Optional JavaScript -->
@@ -40,3 +43,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!-- Notes
+src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCtovsQvkIUWlNqtYwXY87gEd4ZSmJEhMw
+          &q=<%=@lat%>,<%=@long%>&zoom=6" allowfullscreen>
+-->

@@ -7,3 +7,12 @@ before { puts "Parameters: #{params}" }
 get "/" do
   view "geocode"
 end
+
+get "/map" do
+    results = Geocoder.search(params["q"])
+    lat_long = results.first.coordinates  # gives [lat, long]
+    "#{lat_long[0]}, #{lat_long[1]}"
+
+
+    #"you typed #{params["q"]}"
+end
